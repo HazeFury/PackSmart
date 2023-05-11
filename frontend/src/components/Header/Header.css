@@ -1,0 +1,40 @@
+
+.header-container {
+    display: flex;
+	justify-content: space-between;
+
+	padding: 15px 20px;
+	background-color: rgb(36, 36, 36);
+    
+}
+
+.logo-img {
+	height: 80px;
+}
+
+.open-menu-container {
+	background-color: rgb(36, 36, 36);
+	border: none;
+	height: 250px;
+	width: 100vw;
+}
+
+.list-of-items-column {
+	text-align: center;
+	padding: 10px 0;
+}
+.list-of-items-column li {
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	margin: 15px 0;
+	font-size: 2rem;
+	border: solid rgb(121, 121, 121) 2px;
+	border-radius: 20px;
+}
+
+.link-style-mini {
+	text-decoration: none;
+	color: white
+}
+

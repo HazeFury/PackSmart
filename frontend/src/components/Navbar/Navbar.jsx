@@ -1,0 +1,53 @@
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+const getActiveLinkStyle = ({ isActive }) => {
+  if (isActive) {
+    return {
+      color: "white",
+      backgroundColor: "green",
+      height: 40,
+      borderRadius: 20,
+      paddingRight: 15,
+      paddingLeft: 15,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    };
+  }
+  return null;
+};
+
+export default function Navbar() {
+  return (
+    <div>
+      <div>
+        <ul className="list-of-items-row">
+          <li>
+            <NavLink className="link-style" style={getActiveLinkStyle} to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="link-style"
+              style={getActiveLinkStyle}
+              to="/about"
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="link-style"
+              style={getActiveLinkStyle}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
