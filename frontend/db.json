@@ -4,69 +4,229 @@
     {
       "temperature": "0°C et moins",
       "vetements": [
-        "Manteau",
-        "Doudoune épaisse",
-        "Doudoune",
-        "Veste chaude",
-        "Pull chaud",
-        "Pull",
-        "Gants épais",
-        "Moufles",
-        "Pantalon de ski",
-        "Pantalon épais",
-        "Jeans",
-        "Bottes d'hiver",
-        "Chaussures de marche",
-        "Chaussures confortables",
-        "Bonnet chaud",
-        "Chapeau",
-        "Cache-col",
-        "Écharpe",
-        "Bottes d'hiver",
-        "Chaussures de marche",
-        "Chaussures confortables",
-        "Bonnet chaud",
-        "Chapeau",
-        "Cache-col",
-        "Écharpe"
-        
-      ]
+        {
+            "id": 1,
+            "name": "Manteau",
+            "weight": 1.5
+        },
+        {
+            "id": 2,
+            "name": "Doudoune épaisse",
+            "weight": 1.2
+            
+        },
+        {
+            "id": 3,
+            "name": "Doudoune",
+            "weight": 1
+        },
+        {
+            "id": 4,
+            "name": "Veste chaude",
+            "weight": 0.8
+            
+        },
+        {
+            "id": 5,
+            "name": "Pull chaud",
+            "weight": 0.5
+            
+        },
+        {
+            "id": 6,
+            "name": "Pull",
+            "weight": 0.3
+            
+        },
+        {
+            "id": 7,
+            "name": "Gants épais",
+            "weight": 0.2
+        },
+        {
+            "id": 8,
+            "name": "Moufles",
+            "weight": 0.3
+        },
+        {
+            "id": 9,
+            "name": "Pantalon de ski",
+            "weight": 1
+        },
+        {
+            "id": 10,
+            "name": "Pantalon épais",
+            "weight": 0.8
+        },
+        {
+            "id": 11,
+            "name": "Jeans",
+            "weight": 0.5
+        },
+        {
+            "id": 12,
+            "name": "Bottes d'hiver",
+            "weight": 1.2
+        },
+        {
+            "id": 13,
+            "name": "Chaussures de marche",
+            "weight": 0.8
+        },
+        {
+            "id": 14,
+            "name": "Chaussures confortables",
+            "weight": 0.5
+        },
+        {
+            "id": 15,
+            "name": "Bonnet chaud",
+            "weight": 0.2
+        },
+        {
+            "id": 16,
+            "name": "Chapeau",
+            "weight": 0.2
+        },
+        {
+          "id": 17,
+          "name": "Cache-col",
+          "weight": 100
+        },
+        {
+          "id": 18,
+          "name": "Écharpe",
+          "weight": 150
+        }
+        ]
+    
     },
     {
       "temperature": "0°C à 10°C",
       "vetements": [
-        "Manteau",
-        "Pull",
-        "Jeans",
-        "Chaussures confortables",
-        "Gants légers",
-        "Chapeau",
-        "Bonnet",
-        "Écharpe"
+        {
+          "id": 21,
+          "name": "Manteau",
+          "weight": 800
+        },
+        {
+          "id": 22,
+          "name": "Pull",
+          "weight": 300
+        },
+        {
+          "id": 23,
+          "name": "Jeans",
+          "weight": 500
+        },
+        {
+          "id": 24,
+          "name": "Chaussures confortables",
+          "weight": 600
+        },
+        {
+          "id": 25,
+          "name": "Gants légers",
+          "weight": 50
+        },
+        {
+          "id": 26,
+          "name": "Chapeau",
+          "weight": 100
+        },
+        {
+          "id": 27,
+          "name": "Bonnet",
+          "weight": 50
+        },
+        {
+          "id": 28,
+          "name": "Écharpe",
+          "weight": 150
+        }
+        
       ]
     },
     {
       "temperature": "10°C à 20°C",
       "vetements": [
-        "Veste légère",
-        "Pull léger",
-        "Pantalon léger",
-        "Chaussures de marche légères",
-        "Lunettes de soleil",
-        "Chapeau",
-        "Écharpe légère"
+        {
+          "id": 29,
+          "name": "Veste légère",
+          "weight": 400
+        },
+        {
+          "id": 30,
+          "name": "Pull léger",
+          "weight": 200
+        },
+        {
+          "id": 31,
+          "name": "Pantalon léger",
+          "weight": 300
+        },
+        {
+          "id": 32,
+          "name": "Chaussures de marche légères",
+          "weight": 400
+        },
+        {
+          "id": 33,
+          "name": "Lunettes de soleil",
+          "weight": 50
+        },
+        {
+          "id": 34,
+          "name": "Chapeau",
+          "weight": 100
+        },
+        {
+          "id": 35,
+          "name": "Écharpe légère",
+          "weight": 100
+        }
+        
       ]
     },
     {
       "temperature": "20°C et plus",
       "vetements": [
-        "T-shirt",
-        "Short",
-        "Chaussures légères",
-        "Lunettes de soleil",
-        "Chapeau",
-        "Crème solaire",
-        "Maillot de bain"
+        {
+          "id": 36,
+          "name": "T-shirt",
+          "weight": 150
+        },
+        {
+          "id": 37,
+          "name": "Short",
+          "weight": 150
+        },
+        {
+          "id": 38,
+          "name": "Chaussures légères",
+          "weight": 350
+        },
+        {
+          "id": 39,
+          "name": "Lunettes de soleil",
+          "weight": 50
+        },
+        {
+          "id": 40,
+          "name": "Chapeau",
+          "weight": 100
+        },
+        {
+          "id": 41,
+          "name": "Crème solaire",
+          "weight": 100
+        },
+        {
+          "id": 42,
+          "name": "Maillot de bain",
+          "weight": 200
+        }
+        
       ]
     }
   ],
