@@ -1,13 +1,22 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import Weather from "../../components/Weather/Weather";
 import "./Packpage.css";
-import SuitcaseCard from "../../components/SuitcaseCard/SuitcaseCard";
 
 export default function Packpage() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/vetements")
+      .then((res) => setItems(res.data));
+  }, []);
+
   return (
     <div className="main">
       <h1>Welcome to Packingpage</h1>
       <Weather />
-      <SuitcaseCard />
+      <h1 className="victory">{items[0].vetements}</h1>
     </div>
   );
 }
