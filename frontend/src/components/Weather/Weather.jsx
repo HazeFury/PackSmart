@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { WeatherContext } from "../../contexts/WeatherContext";
 import "./Weather.css";
 
 export default function Weather() {
-  const [data, setData] = useState({});
+  const { weatherData, setWeatherData } = React.useContext(WeatherContext);
   const [location, setLocation] = useState("Lyon,fr");
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=fr`;
@@ -12,20 +13,20 @@ export default function Weather() {
   useEffect(() => {
     const interval = setInterval(() => {
       setDate(new Date());
-    }, 1000);
+    }, 60 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     axios.get(url).then((response) => {
-      setData(response.data);
+      setWeatherData(response.data);
     });
   }, [url]);
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       axios.get(url).then((response) => {
-        setData(response.data);
+        setWeatherData(response.data);
       });
       setLocation("");
     }
@@ -36,6 +37,7 @@ export default function Weather() {
   const handleInputClick = () => {
     setLocation("");
   };
+
   return (
     <div className="weather-card">
       <div className="weather-top-container">
@@ -50,39 +52,47 @@ export default function Weather() {
             className="search-input"
           />
           <div className="clock">
-            <p>{date.toLocaleString("fr-FR")}</p>
+            <p>{date.toLocaleDateString("fr-FR")}</p>
           </div>
         </div>
         <div className="location">
-          <p>{data.name}</p>
+          <p>{weatherData.name}</p>
         </div>
         <div className="temp">
-          {data.main ? <h2>{data.main.temp.toFixed()}°c</h2> : null}
+          {weatherData.main ? (
+            <h2>{weatherData.main.temp.toFixed()}°c</h2>
+          ) : null}
         </div>
         <div className="weather-description">
-          {data.weather ? (
+          {weatherData.weather ? (
             <img
-              src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
               alt="weather-icon"
               className="weather-icon"
             />
           ) : null}
-          {data.weather ? <p>{data.weather[0].description}</p> : null}
+          {weatherData.weather ? (
+            <p>{weatherData.weather[0].description}</p>
+          ) : null}
         </div>
       </div>
 
-      {data.name !== undefined && (
+      {weatherData.name !== undefined && (
         <div className="weather-bottom-container">
           <div className="feels">
-            {data.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
+            {weatherData.main ? (
+              <p>{weatherData.main.feels_like.toFixed()}°C</p>
+            ) : null}
             <p>Ressenti</p>
           </div>
           <div className="humidity">
-            {data.main ? <p>{data.main.humidity}%</p> : null}
+            {weatherData.main ? <p>{weatherData.main.humidity}%</p> : null}
             <p>Humidité</p>
           </div>
           <div className="wind">
-            {data.wind ? <p>{data.wind.speed.toFixed()}km/h</p> : null}
+            {weatherData.wind ? (
+              <p>{weatherData.wind.speed.toFixed()}km/h</p>
+            ) : null}
             <p>Vent</p>
           </div>
         </div>
