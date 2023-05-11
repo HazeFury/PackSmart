@@ -4,7 +4,7 @@ import { useState } from "react";
 import OpenMenu from "../../assets/menu.svg";
 import Close from "../../assets/close.svg";
 import Navbar from "../Navbar/Navbar";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/PackSmart.png";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);

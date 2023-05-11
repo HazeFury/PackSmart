@@ -5,7 +5,7 @@ const getActiveLinkStyle = ({ isActive }) => {
   if (isActive) {
     return {
       color: "white",
-      backgroundColor: "green",
+      backgroundColor: "#1c5d99",
       height: 40,
       borderRadius: 20,
       paddingRight: 15,
