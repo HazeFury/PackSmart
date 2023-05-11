@@ -4,7 +4,7 @@ import Weather from "../../components/Weather/Weather";
 import "./Packpage.css";
 
 export default function Packpage() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(null);
 
   useEffect(() => {
     axios
