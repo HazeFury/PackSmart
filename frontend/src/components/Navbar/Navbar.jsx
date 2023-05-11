@@ -32,16 +32,16 @@ export default function Navbar() {
             <NavLink
               className="link-style"
               style={getActiveLinkStyle}
-              to="/about"
+              to="/packing"
             >
-              About
+              Let's Pack!
             </NavLink>
           </li>
           <li>
             <NavLink
               className="link-style"
               style={getActiveLinkStyle}
-              to="/contact"
+              to="/about"
             >
               Contact
             </NavLink>
