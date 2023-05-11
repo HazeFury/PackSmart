@@ -22,8 +22,8 @@
     "dev-back": "cross-env-shell \"cd ./backend && $npm_package_config_cli run dev\"",
     "lint": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run lint && cd ../backend && $npm_package_config_cli run lint\"",
     "fix": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run fix && cd ../backend && $npm_package_config_cli run fix\"",
-    "all-front": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" \"$npm_package_config_cli:front*\"'",
-    "front-data": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run data\""
+    "front-data": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run data\"",
+    "all-front": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" \"$npm_package_config_cli:front*\"'"
   },
   "keywords": [],
   "author": "Wild Code School",
