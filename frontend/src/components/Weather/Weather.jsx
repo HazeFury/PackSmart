@@ -6,7 +6,7 @@ export default function Weather() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("Lyon,fr");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=$f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=fr`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=fr`;
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
