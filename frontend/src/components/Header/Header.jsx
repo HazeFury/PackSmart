@@ -42,9 +42,9 @@ export default function Header() {
               <Link
                 className="link-style-mini"
                 onClick={handleToggle}
-                to="/about"
+                to="/packing"
               >
-                About
+                Let's Pack!
               </Link>
             </li>
             <li>
