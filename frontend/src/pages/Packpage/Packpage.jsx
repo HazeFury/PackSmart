@@ -11,11 +11,11 @@ export default function Packpage() {
   const temperature = weatherData.main.feels_like.toFixed();
 
   const filterItems = () => {
-    if (temperature < 10) {
-      return items[0].vetements[1];
+    if (temperature < 14) {
+      return items[0].vetements[1].name;
     }
-    if (temperature > 10) {
-      return items[2].vetements[1];
+    if (temperature >= 14) {
+      return items[2].vetements[1].name;
     }
     return null;
   };
@@ -30,8 +30,9 @@ export default function Packpage() {
     <div className="main">
       <h1>Welcome to Packingpage</h1>
       <Weather />
-      {items && <h1 className="victory">{filterItems()}</h1>}
+      {items && weatherData && <h1 className="victory">{filterItems()}</h1>}
       <p className="temperature">{temperature}</p>
+      <p>{items[0].vetements[1].name}</p>
     </div>
   );
 }
