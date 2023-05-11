@@ -28,14 +28,14 @@
 }
 
 .link-style:hover {
-    background-color: green;
+    background-color: #1c5d99;
 }
 
 .menu-burger-btn {
     display: none;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 865px){
     .list-of-items-row {
         display: none;
         
