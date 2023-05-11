@@ -25,6 +25,7 @@ export default function Weather() {
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
+      event.preventDefault();
       axios.get(url).then((response) => {
         setWeatherData(response.data);
       });
