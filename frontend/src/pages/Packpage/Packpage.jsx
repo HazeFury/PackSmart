@@ -3,7 +3,7 @@ import "./Packpage.css";
 
 export default function Packpage() {
   return (
-    <div className="section">
+    <div className="main">
       <h1>Welcome to Packingpage</h1>
       <Weather />
     </div>
