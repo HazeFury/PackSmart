@@ -133,14 +133,14 @@ export default function Weather() {
 
       {showLuggage && (
         <div className="luggage">
-          {/* <ul>
-            {items.map((item) => (
-              <li key={item.vetements[0].vetements_tres_froid.id}>
-                {item.vetements[0].vetements_tres_froid.name}
-              </li>
-            ))}
-            </ul> */}
-          <p>{items.vetement_tres_froid[0].name}</p>
+          <h1 className="luggage-title">Your Luggage:</h1>
+          <div>
+            <ul className="luggage-list">
+              {items[0].vetements_tres_froid.map((item) => (
+                <li key={item.id}>{item.name}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </>

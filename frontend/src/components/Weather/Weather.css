@@ -137,6 +137,27 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.luggage {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: whitesmoke;
+  width: 100%;
+  background-image: url("../../assets/luggage.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.luggage-title {
+  font-size: 2rem;
+  color: #1d5e98;
+  padding: 2rem;
+}
+
+.luggage-list {
+  padding: 2rem;
+}
+
 @media (min-width: 768px) {
   .weather-card {
     width: 50%;
