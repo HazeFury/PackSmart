@@ -4,7 +4,7 @@ import Weather from "../../components/Weather/Weather";
 import "./Packpage.css";
 
 export default function Packpage() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(null);
 
   useEffect(() => {
     axios
@@ -16,7 +16,7 @@ export default function Packpage() {
     <div className="main">
       <h1>Welcome to Packingpage</h1>
       <Weather />
-      <h1 className="victory">{items[0].vetements}</h1>
+      {items && <h1 className="victory">{items[0].vetements}</h1>}
     </div>
   );
 }

@@ -5,7 +5,8 @@ import "./Weather.css";
 
 export default function Weather() {
   const { weatherData, setWeatherData } = React.useContext(WeatherContext);
-  const [location, setLocation] = useState("Lyon,fr");
+  const [location, setLocation] = useState("");
+  const [showWeather, setShowWeather] = useState(false);
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=fr`;
   const [date, setDate] = useState(new Date());
@@ -17,87 +18,106 @@ export default function Weather() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    axios.get(url).then((response) => {
-      setWeatherData(response.data);
-    });
-  }, [url]);
-
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
       axios.get(url).then((response) => {
         setWeatherData(response.data);
+        setShowWeather(true);
       });
       setLocation("");
     }
   };
 
-  const handleLocationChange = (event) => setLocation(event.target.value);
+  const handleLocationChange = (event) => {
+    event.preventDefault();
+    setLocation(event.target.value);
+  };
 
   const handleInputClick = () => {
     setLocation("");
   };
 
   return (
-    <div className="weather-card">
-      <div className="weather-top-container">
-        <div className="search">
-          <input
-            value={location}
-            onChange={handleLocationChange}
-            onKeyDown={searchLocation}
-            onClick={handleInputClick}
-            placeholder="Enter Location"
-            type="text"
-            className="search-input"
-          />
-          <div className="clock">
-            <p>{date.toLocaleDateString("fr-FR")}</p>
-          </div>
-        </div>
-        <div className="location">
-          <p>{weatherData.name}</p>
-        </div>
-        <div className="temp">
-          {weatherData.main ? (
-            <h2>{weatherData.main.temp.toFixed()}°c</h2>
-          ) : null}
-        </div>
-        <div className="weather-description">
-          {weatherData.weather ? (
-            <img
-              src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-              alt="weather-icon"
-              className="weather-icon"
+    <div className="weather-card-container">
+      <div className="weather-card">
+        <div className="weather-top-container">
+          <div className="search">
+            <input
+              value={location}
+              onChange={handleLocationChange}
+              onKeyDown={searchLocation}
+              onClick={handleInputClick}
+              placeholder="Enter Location"
+              type="text"
+              className="search-input"
             />
-          ) : null}
-          {weatherData.weather ? (
-            <p>{weatherData.weather[0].description}</p>
-          ) : null}
+            <button
+              type="button"
+              className="submit-location-btn"
+              onClick={() => {
+                axios.get(url).then((response) => {
+                  setWeatherData(response.data);
+                  setShowWeather(true);
+                });
+                setLocation("");
+              }}
+            >
+              Search
+            </button>
+          </div>
+          {showWeather && weatherData && (
+            <>
+              <div className="location-date">
+                <div className="location">
+                  <p>{weatherData.name}</p>
+                </div>
+                <div className="date">
+                  <p>{date.toDateString("fr-FR")}</p>
+                </div>
+              </div>
+              <div className="temp">
+                {weatherData.main ? (
+                  <h2>{weatherData.main.temp.toFixed()}°c</h2>
+                ) : null}
+              </div>
+              <div className="weather-description">
+                {weatherData.weather ? (
+                  <img
+                    src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+                    alt="weather-icon"
+                    className="weather-icon"
+                  />
+                ) : null}
+                {weatherData.weather ? (
+                  <p>{weatherData.weather[0].description}</p>
+                ) : null}
+              </div>
+            </>
+          )}
         </div>
-      </div>
 
-      {weatherData.name !== undefined && (
-        <div className="weather-bottom-container">
-          <div className="feels">
-            {weatherData.main ? (
-              <p>{weatherData.main.feels_like.toFixed()}°C</p>
-            ) : null}
-            <p>Ressenti</p>
+        {showWeather && weatherData && (
+          <div className="weather-bottom-container">
+            <div className="feels">
+              {weatherData.main ? (
+                <p>{weatherData.main.feels_like.toFixed()}°C</p>
+              ) : null}
+              <p>Ressenti</p>
+            </div>
+            <div className="humidity">
+              {weatherData.main ? <p>{weatherData.main.humidity}%</p> : null}
+              <p>Humidité</p>
+            </div>
+            <div className="wind">
+              {weatherData.wind ? (
+                <p>{weatherData.wind.speed.toFixed()}km/h</p>
+              ) : null}
+              <p>Vent</p>
+            </div>
           </div>
-          <div className="humidity">
-            {weatherData.main ? <p>{weatherData.main.humidity}%</p> : null}
-            <p>Humidité</p>
-          </div>
-          <div className="wind">
-            {weatherData.wind ? (
-              <p>{weatherData.wind.speed.toFixed()}km/h</p>
-            ) : null}
-            <p>Vent</p>
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
