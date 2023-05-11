@@ -1,0 +1,132 @@
+{ 
+  "vetements": [
+    
+    {
+      "temperature": "0°C et moins",
+      "vetements": [
+        "Manteau",
+        "Doudoune épaisse",
+        "Doudoune",
+        "Veste chaude",
+        "Pull chaud",
+        "Pull",
+        "Gants épais",
+        "Moufles",
+        "Pantalon de ski",
+        "Pantalon épais",
+        "Jeans",
+        "Bottes d'hiver",
+        "Chaussures de marche",
+        "Chaussures confortables",
+        "Bonnet chaud",
+        "Chapeau",
+        "Cache-col",
+        "Écharpe"
+        
+      ]
+    },
+    {
+      "temperature": "0°C à 10°C",
+      "vetements": [
+        "Manteau",
+        "Pull",
+        "Jeans",
+        "Chaussures confortables",
+        "Gants légers",
+        "Chapeau",
+        "Bonnet",
+        "Écharpe"
+      ]
+    },
+    {
+      "temperature": "10°C à 20°C",
+      "vetements": [
+        "Veste légère",
+        "Pull léger",
+        "Pantalon léger",
+        "Chaussures de marche légères",
+        "Lunettes de soleil",
+        "Chapeau",
+        "Écharpe légère"
+      ]
+    },
+    {
+      "temperature": "20°C et plus",
+      "vetements": [
+        "T-shirt",
+        "Short",
+        "Chaussures légères",
+        "Lunettes de soleil",
+        "Chapeau",
+        "Crème solaire",
+        "Maillot de bain"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "nom": "Passeport ou carte d'identité",
+      "exigence": "obligatoire"
+    },
+    {
+      "nom": "Visa",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Billets d'avion, de train ou de bus",
+      "exigence": "obligatoire"
+    },
+    {
+      "nom": "Réservations d'hôtel ou de logement",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Confirmation de location de voiture",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Itinéraire de voyage",
+      "exigence": "conseillé"
+    },
+    {
+      "nom": "Assurance voyage et santé",
+      "exigence": "conseillé"
+    },
+    {
+      "nom": "Carte de crédit et/ou devises étrangères",
+      "exigence": "conseillé"
+    },
+    {
+      "nom": "Carnet de vaccination à jour",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Documents de voyage pour les enfants",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Carte de sécurité sociale ou d'assurance maladie",
+      "exigence": "conseillé"
+    },
+    {
+      "nom": "Permis de conduire international",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Liste de contacts d'urgence et numéros d'assistance en voyage",
+      "exigence": "conseillé"
+    },
+    {
+      "nom": "Livret de famille",
+      "exigence": "selon les exigences du pays de destination"
+    },
+    {
+      "nom": "Tout autre document spécifique exigé par le pays de destination",
+      "exigence": "selon les exigences du pays de destination"
+    }
+  ]
+}
+
+
+
+    
