@@ -1,37 +1,50 @@
+.header-section {
+	width: 101%;
+	background-color: rgb(36, 36, 36);
+}
 .header-container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+	justify-content: space-between;
 
-  padding: 15px 20px;
-  background-color: rgb(36, 36, 36);
+	padding: 15px 20px;
+	background-color: rgb(36, 36, 36);
+    
 }
 
 .logo-img {
-  height: 80px;
+	height: 80px;
 }
 
 .open-menu-container {
-  background-color: rgb(36, 36, 36);
-  border: none;
-  height: 250px;
-  width: 100vw;
+	background-color: rgb(36, 36, 36);
+	border: none;
+	height: 250px;
+	width: 100vw;
 }
 
 .list-of-items-column {
-  text-align: center;
-  padding: 10px 0;
+	text-align: center;
+	padding: 10px 0;
 }
 .list-of-items-column li {
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-  margin: 15px 0;
-  font-size: 2rem;
-  border: solid rgb(121, 121, 121) 2px;
-  border-radius: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	margin: 15px 0;
+	font-size: 2rem;
+	border: solid rgb(121, 121, 121) 2px;
+	border-radius: 20px;
 }
 
 .link-style-mini {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white
+}
+
+@media screen and (max-width: 370px){
+	.logo-img {
+		height: 60px;
+		margin: 10px 0;
+	}
+
 }
