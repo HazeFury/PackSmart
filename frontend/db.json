@@ -3,44 +3,40 @@
     
     {
       "temperature": "0°C et moins",
-      "vetements": [
+      "vetements_tres_froid": [
         {
             "id": 1,
-            "name": "Manteau",
+            "name": "Veste Polaire",
             "weight": 1.5
         },
         {
             "id": 2,
             "name": "Doudoune épaisse",
             "weight": 1.2
-            
         },
         {
             "id": 3,
-            "name": "Doudoune",
+            "name": "Pantalon Chaud",
             "weight": 1
         },
         {
             "id": 4,
             "name": "Veste chaude",
             "weight": 0.8
-            
         },
         {
             "id": 5,
-            "name": "Pull chaud",
+            "name": "Pull en Laine",
             "weight": 0.5
-            
         },
         {
             "id": 6,
-            "name": "Pull",
+            "name": "T-shirt Technique",
             "weight": 0.3
-            
         },
         {
             "id": 7,
-            "name": "Gants épais",
+            "name": "collant chaud",
             "weight": 0.2
         },
         {
@@ -50,7 +46,7 @@
         },
         {
             "id": 9,
-            "name": "Pantalon de ski",
+            "name": "sous-vêtements",
             "weight": 1
         },
         {
@@ -75,12 +71,12 @@
         },
         {
             "id": 14,
-            "name": "Chaussures confortables",
+            "name": "Chemise",
             "weight": 0.5
         },
         {
             "id": 15,
-            "name": "Bonnet chaud",
+            "name": "lunettes de soleil",
             "weight": 0.2
         },
         {
@@ -90,20 +86,20 @@
         },
         {
           "id": 17,
-          "name": "Cache-col",
-          "weight": 100
+          "name": "Bonnet",
+          "weight": 0.5
         },
         {
           "id": 18,
           "name": "Écharpe",
-          "weight": 150
+          "weight": 0.6
         }
         ]
     
     },
     {
       "temperature": "0°C à 10°C",
-      "vetements": [
+      "vetements_froid": [
         {
           "id": 21,
           "name": "Manteau",
@@ -149,7 +145,7 @@
     },
     {
       "temperature": "10°C à 20°C",
-      "vetements": [
+      "vetements_moyen": [
         {
           "id": 29,
           "name": "Veste légère",
@@ -190,7 +186,7 @@
     },
     {
       "temperature": "20°C et plus",
-      "vetements": [
+      "vetements_chaud": [
         {
           "id": 36,
           "name": "T-shirt",
