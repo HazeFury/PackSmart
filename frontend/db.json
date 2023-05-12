@@ -5,19 +5,19 @@
       "vetements": [
         {
           "id": 1,
-          "name": "Doudoune épaisse",
+          "name": "Puffy Jacket",
           "weight": 1.5,
           "temperature": "cold"
         },
         {
           "id": 2,
-          "name": "Pull en Laine",
+          "name": "Wool Sweater",
           "weight": 1.2,
           "temperature": "middle"
         },
         {
           "id": 3,
-          "name": "Veste légère",
+          "name": "Light Jacket",
           "weight": 1,
           "temperature": "hot"
         },
@@ -29,7 +29,7 @@
         },
         {
           "id": 5,
-          "name": "Pantalon épais et chaud",
+          "name": "Thick & Warm Pants",
           "weight": 0.5,
           "temperature": "cold"
         },
@@ -41,73 +41,73 @@
         },
         {
           "id": 7,
-          "name": "Pantalon léger",
+          "name": "Light Pants",
           "weight": 0.2,
           "temperature": "hot"
         },
         {
           "id": 8,
-          "name": "Short",
+          "name": "Shorts",
           "weight": 0.3,
           "temperature": "extraHot"
         },
         {
           "id": 9,
-          "name": "Bottes d'hiver",
+          "name": "Winter Boots",
           "weight": 1,
           "temperature": "cold"
         },
         {
           "id": 10,
-          "name": "Bottines",
+          "name": "Ankle Boots",
           "weight": 0.8,
           "temperature": "middle"
         },
         {
           "id": 11,
-          "name": "Basket",
+          "name": "Sneakers",
           "weight": 0.5,
           "temperature": "hot"
         },
         {
           "id": 12,
-          "name": "Tongues",
+          "name": "Flip Flops",
           "weight": 1.2,
           "temperature": "extraHot"
         },
         {
           "id": 13,
-          "name": "Chapka",
+          "name": "Fur Hat",
           "weight": 0.8,
           "temperature": "cold"
         },
         {
           "id": 14,
-          "name": "Bonnet",
+          "name": "Beanie",
           "weight": 0.5,
           "temperature": "middle"
         },
         {
           "id": 15,
-          "name": "Casquette",
+          "name": "Cap",
           "weight": 0.2,
           "temperature": "hot"
         },
         {
           "id": 16,
-          "name": "Bob",
+          "name": "Bucket Hat",
           "weight": 0.2,
           "temperature": "extraHot"
         },
         {
           "id": 17,
-          "name": "Gants chauds",
+          "name": "Warm Gloves",
           "weight": 0.5,
           "temperature": "cold"
         },
         {
           "id": 18,
-          "name": "Écharpe",
+          "name": "Scarf",
           "weight": 0.6,
           "temperature": "cold"
         }        
@@ -118,73 +118,73 @@
       "accessoires": [
         {
           "id": 19,
-          "name": "Chaussure de running",
+          "name": "Running Shoes",
           "weight": 50,
           "type": "sport"
         },
         {
           "id": 20,
-          "name": "Enceinte MP3",
+          "name": "Bluetooth Speaker",
           "weight": 50,
           "type": "chill"
         },
         {
           "id": 21,
-          "name": "Maillot de bain",
+          "name": "Swimsuit",
           "weight": 50,
           "type": "plage"
         },
         {
           "id": 22,
-          "name": "Serviette de plage",
+          "name": "Beach Towel",
           "weight": 50,
           "type": "plage"
         },
         {
           "id": 23,
-          "name": "Crème solaire",
+          "name": "Sunscreen",
           "weight": 50,
           "type": "plage"
         },
         {
           "id": 24,
-          "name": "Guide du routard",
+          "name": "Travel Guidebook",
           "weight": 50,
           "type": "culture"
         },
         {
           "id": 25,
-          "name": "carte",
+          "name": "Local Map",
           "weight": 50,
           "type": "nature"
         },
         {
           "id": 26,
-          "name": "chaussure de randonnée",
+          "name": "Hiking Shoes",
           "weight": 50,
           "type": "nature"
         },
         {
           "id": 27,
-          "name": "guide touristique",
+          "name": "Tourist Guidebook",
           "weight": 50,
           "type": "culture"
         },
         {
           "id": 28,
-          "name": "Pierre à feu",
+          "name": "Firestarter",
           "weight": 50,
           "type": "nature"
         },
         {
           "id": 29,
-          "name": "Couteau",
+          "name": "Swiss Army Knife",
           "weight": 50,
           "type": "nature"
         },
         {
           "id": 30,
-          "name": "boussole",
+          "name": "Compass",
           "weight": 50,
           "type": "nature"
         },
@@ -196,39 +196,39 @@
         },
         {
           "id": 32,
-          "name": "Casque audio",
+          "name": "Headphones",
           "weight": 50,
           "type": "chill"
         },
         {
           "id": 33,
-          "name": "Livre",
+          "name": "Book",
           "weight": 50,
           "type": "chill"
         },
         {
           "id": 34,
-          "name": "Jogging de course",
+          "name": "Jogger Pants",
           "weight": 50,
           "type": "sport"
         },
         {
           "id": 35,
-          "name": "Hammac",
+          "name": "Hammock",
           "weight": 50,
           "type": "chill"
         },
         {
           "id": 36,
-          "name": "Nappe de pic-nic",
+          "name": "Picnic Blanket",
           "weight": 50,
           "type": "culture"
         },
         {
           "id": 37,
-          "name": "Barre de traction pliable",
+          "name": "Foldable Pull-Up Bar",
           "weight": 50,
-          "type": "culture"
+          "type": "sport"
         }
         
       ]
@@ -237,37 +237,37 @@
       "extras": [
         {
           "id": 38,
-          "name": "Lunettes de soleil",
+          "name": "Sunglasses",
           "weight": 400,
           "weather": "clear"
         },
         {
           "id": 39,
-          "name": "Parapluie",
+          "name": "Umbrella",
           "weight": 200,
           "weather": "rain"
         },
         {
           "id": 40,
-          "name": "Brumisateur",
+          "name": "Misting Fan",
           "weight": 300,
           "weather": "clear"
         },
         {
           "id": 41,
-          "name": "K-way",
+          "name": "Raincoat",
           "weight": 400,
           "weather": "rain"
         },
         {
           "id": 42,
-          "name": "Coupe-vent",
+          "name": "Windbreaker",
           "weight": 50,
           "weather": "cloud"
         },
         {
           "id": 43,
-          "name": "Cache-cou",
+          "name": "light Scarf",
           "weight": 100,
           "weather": "cloud"
         }
