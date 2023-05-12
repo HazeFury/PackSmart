@@ -10,7 +10,7 @@ export default function Weather() {
   const [showWeather, setShowWeather] = useState(false);
   const [showLuggage, setShowLuggage] = useState(false);
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=fr`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=en`;
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Weather() {
                 onChange={handleLocationChange}
                 onKeyDown={searchLocation}
                 onClick={handleInputClick}
-                placeholder="Enter Location"
+                placeholder="Enter Your Destination"
                 type="text"
                 className="search-input"
               />
@@ -132,14 +132,18 @@ export default function Weather() {
       </div>
 
       {showLuggage && (
-        <div className="luggage">
-          <h1 className="luggage-title">Your Luggage:</h1>
-          <div>
-            <ul className="luggage-list">
-              {items[0].vetements_tres_froid.map((item) => (
-                <li key={item.id}>{item.name}</li>
-              ))}
-            </ul>
+        <div className="luggage-container">
+          <div className="luggage">
+            <div className="luggage-title-container">
+              <h1 className="luggage-title">Your Luggage:</h1>
+            </div>
+            <div>
+              <ul className="luggage-list">
+                {items[0].vetements_tres_froid.map((item) => (
+                  <li key={item.id}>{item.name}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       )}
