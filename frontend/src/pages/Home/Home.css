@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .main {
   width: 100%;
   min-height: 100vh;
@@ -7,11 +9,22 @@
 }
 
 .home-container {
+  font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 30px;
   max-width: 1000px;
   margin-top: 10px;
   margin-bottom: 50px;
+}
+
+.home-container span {
+  font-style: italic;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.home-container span.sun {
+  font-style: normal;
 }
 
 .home-container #home-image {
