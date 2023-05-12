@@ -88,6 +88,18 @@ export default function Weather() {
       // eslint-disable-next-line react/destructuring-assignment
       return el.type === "chill";
     }
+    if (type === "nature") {
+      // eslint-disable-next-line react/destructuring-assignment
+      return el.type === "nature";
+    }
+    if (type === "plage") {
+      // eslint-disable-next-line react/destructuring-assignment
+      return el.type === "plage";
+    }
+    if (type === "culture") {
+      // eslint-disable-next-line react/destructuring-assignment
+      return el.type === "culture";
+    }
     return null;
   }
 
@@ -201,6 +213,15 @@ export default function Weather() {
               <option className="option" value="chill">
                 Chill
               </option>
+              <option className="option" value="nature">
+                Nature
+              </option>
+              <option className="option" value="plage">
+                Beach
+              </option>
+              <option className="option" value="culture">
+                Culture
+              </option>
             </select>
           </label>
         </form>
@@ -230,7 +251,7 @@ export default function Weather() {
               </ul>
             </div>
             <div className="extra-container">
-              <h2 className="title">Extra</h2>
+              <h2 className="title">Extras</h2>
               <ul className="extra-list">
                 {items[2].extras
                   .filter((item) => filteredExtra(item, weatherData))
