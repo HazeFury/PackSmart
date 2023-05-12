@@ -157,7 +157,7 @@
 
 #type-select {
   margin: 0.5rem;
-  width: 10rem;
+  width: 8rem;
   height: 2rem;
   display: flex;
   flex-direction: column;
@@ -166,12 +166,15 @@
   background-color: rgb(233, 232, 238);
 }
 
+#type-select:hover {
+  border: 1px solid #5ee0e6;
+}
 .option {
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-indent: 50%;
+  padding-left: 2rem;
 }
 
 .luggage-container {
