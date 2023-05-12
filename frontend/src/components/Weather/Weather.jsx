@@ -91,6 +91,19 @@ export default function Weather() {
     return null;
   }
 
+  const filteredExtra = (el, tp) => {
+    if (tp.weather[0].main === "Clear") {
+      return el.weather === "clear";
+    }
+    if (tp.weather[0].main === "Clouds") {
+      return el.weather === "cloud";
+    }
+    if (tp.weather[0].main === "Rain") {
+      return el.weather === "rain";
+    }
+    return null;
+  };
+
   return (
     <>
       <div className="weather-card-container">
@@ -211,8 +224,8 @@ export default function Weather() {
             <div className="extra-container">
               <h2 className="title">Extra</h2>
               <ul className="extra-list">
-                {items[1].accessoires
-                  .filter((item) => FilterType(item))
+                {items[2].extras
+                  .filter((item) => filteredExtra(item, weatherData))
                   .map((item) => (
                     <li key={item.id}>{item.name}</li>
                   ))}
