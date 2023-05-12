@@ -3,144 +3,152 @@
     
     {
       "temperature": "0°C et moins",
-      "vetements_tres_froid": [
+      "vetements": [
         {
-            "id": 1,
-            "name": "Veste Polaire",
-            "weight": 1.5
+          "id": 1,
+          "name": "Doudoune épaisse",
+          "weight": 1.5,
+          "temperature": "cold"
         },
         {
-            "id": 2,
-            "name": "Doudoune épaisse",
-            "weight": 1.2
+          "id": 2,
+          "name": "Pull en Laine",
+          "weight": 1.2,
+          "temperature": "middle"
         },
         {
-            "id": 3,
-            "name": "Pantalon Chaud",
-            "weight": 1
+          "id": 3,
+          "name": "Veste légère",
+          "weight": 1,
+          "temperature": "hot"
         },
         {
-            "id": 4,
-            "name": "Veste chaude",
-            "weight": 0.8
+          "id": 4,
+          "name": "T-shirt",
+          "weight": 0.8,
+          "temperature": "extraHot"
         },
         {
-            "id": 5,
-            "name": "Pull en Laine",
-            "weight": 0.5
+          "id": 5,
+          "name": "Pantalon épais et chaud",
+          "weight": 0.5,
+          "temperature": "cold"
         },
         {
-            "id": 6,
-            "name": "T-shirt Technique",
-            "weight": 0.3
+          "id": 6,
+          "name": "Jeans",
+          "weight": 0.3,
+          "temperature": "middle"
         },
         {
-            "id": 7,
-            "name": "collant chaud",
-            "weight": 0.2
+          "id": 7,
+          "name": "Pantalon léger",
+          "weight": 0.2,
+          "temperature": "hot"
         },
         {
-            "id": 8,
-            "name": "Moufles",
-            "weight": 0.3
+          "id": 8,
+          "name": "Short",
+          "weight": 0.3,
+          "temperature": "extraHot"
         },
         {
-            "id": 9,
-            "name": "sous-vêtements",
-            "weight": 1
+          "id": 9,
+          "name": "Bottes d'hiver",
+          "weight": 1,
+          "temperature": "cold"
         },
         {
-            "id": 10,
-            "name": "Pantalon épais",
-            "weight": 0.8
+          "id": 10,
+          "name": "Bottines",
+          "weight": 0.8,
+          "temperature": "middle"
         },
         {
-            "id": 11,
-            "name": "Jeans",
-            "weight": 0.5
+          "id": 11,
+          "name": "Basket",
+          "weight": 0.5,
+          "temperature": "hot"
         },
         {
-            "id": 12,
-            "name": "Bottes d'hiver",
-            "weight": 1.2
+          "id": 12,
+          "name": "Tongues",
+          "weight": 1.2,
+          "temperature": "extraHot"
         },
         {
-            "id": 13,
-            "name": "Chaussures de marche",
-            "weight": 0.8
+          "id": 13,
+          "name": "Chapka",
+          "weight": 0.8,
+          "temperature": "cold"
         },
         {
-            "id": 14,
-            "name": "Chemise",
-            "weight": 0.5
+          "id": 14,
+          "name": "Bonnet",
+          "weight": 0.5,
+          "temperature": "middle"
         },
         {
-            "id": 15,
-            "name": "lunettes de soleil",
-            "weight": 0.2
+          "id": 15,
+          "name": "Casquette",
+          "weight": 0.2,
+          "temperature": "hot"
         },
         {
-            "id": 16,
-            "name": "Chapeau",
-            "weight": 0.2
+          "id": 16,
+          "name": "Bob",
+          "weight": 0.2,
+          "temperature": "extraHot"
         },
         {
           "id": 17,
-          "name": "Bonnet",
-          "weight": 0.5
+          "name": "Gants chauds",
+          "weight": 0.5,
+          "temperature": "cold"
         },
         {
           "id": 18,
           "name": "Écharpe",
-          "weight": 0.6
+          "weight": 0.6,
+          "temperature": "cold"
+        },
+        {
+          "id": 42,
+          "name": "Maillot de bain",
+          "weight": 200,
+          "temperature": "extraHot"
+        },
+        {
+          "id": 39,
+          "name": "Lunettes de soleil",
+          "weight": 50,
+          "temperature": "extraHot"
+        },
+        {
+          "id": 41,
+          "name": "Crème solaire",
+          "weight": 100,
+          "temperature": "extraHot"
         }
-        ]
+        
+      ]
     
     },
     {
       "temperature": "0°C à 10°C",
-      "vetements_froid": [
+      "accessoires": [
         {
-          "id": 21,
-          "name": "Manteau",
-          "weight": 800
+          "id": 42,
+          "name": "Chaussure de running",
+          "weight": 50,
+          "type": "sport"
         },
         {
-          "id": 22,
-          "name": "Pull",
-          "weight": 300
-        },
-        {
-          "id": 23,
-          "name": "Jeans",
-          "weight": 500
-        },
-        {
-          "id": 24,
-          "name": "Chaussures confortables",
-          "weight": 600
-        },
-        {
-          "id": 25,
-          "name": "Gants légers",
-          "weight": 50
-        },
-        {
-          "id": 26,
-          "name": "Chapeau",
-          "weight": 100
-        },
-        {
-          "id": 27,
-          "name": "Bonnet",
-          "weight": 50
-        },
-        {
-          "id": 28,
-          "name": "Écharpe",
-          "weight": 150
+          "id": 43,
+          "name": "Enceinte MP3",
+          "weight": 50,
+          "type": "chill"
         }
-        
       ]
     },
     {

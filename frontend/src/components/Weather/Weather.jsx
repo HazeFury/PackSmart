@@ -9,6 +9,7 @@ export default function Weather() {
   const [items, setItems] = useState(null);
   const [showWeather, setShowWeather] = useState(false);
   const [showLuggage, setShowLuggage] = useState(false);
+  const [type, setType] = useState("");
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f9f02a6789ca981ee3a69eeb7f8ce34e&units=metric&lang=en`;
   const [date, setDate] = useState(new Date());
@@ -46,6 +47,49 @@ export default function Weather() {
   const handleInputClick = () => {
     setLocation("");
   };
+
+  const filteredItems = (el, tp) => {
+    if (tp.main.feels_like.toFixed() <= 8) {
+      return el.temperature === "cold";
+    }
+    if (
+      tp.main.feels_like.toFixed() > 8 &&
+      tp.main.feels_like.toFixed() <= 16
+    ) {
+      return el.temperature === "middle";
+    }
+    if (
+      tp.main.feels_like.toFixed() > 16 &&
+      tp.main.feels_like.toFixed() <= 24
+    ) {
+      return el.temperature === "hot";
+    }
+    if (tp.main.feels_like.toFixed() > 24) {
+      return el.temperature === "extraHot";
+    }
+    if (type === "sport") {
+      return el.type === "sport";
+    }
+    if (type === "chill") {
+      return el.type === "chill";
+    }
+    return el.id;
+  };
+
+  function FilterType(el) {
+    if (type === "") {
+      return null;
+    }
+    if (type === "sport") {
+      // eslint-disable-next-line react/destructuring-assignment
+      return el.type === "sport";
+    }
+    if (type === "chill") {
+      // eslint-disable-next-line react/destructuring-assignment
+      return el.type === "chill";
+    }
+    return null;
+  }
 
   return (
     <>
@@ -130,8 +174,18 @@ export default function Weather() {
           )}
         </div>
       </div>
-
+      <form className="center">
+        <label htmlFor="cupcake-select">
+          Filter by{" "}
+          <select id="type-select" onChange={(e) => setType(e.target.value)}>
+            <option value="">---</option>
+            <option value="sport">Sport</option>
+            <option value="chill">Chill</option>
+          </select>
+        </label>
+      </form>
       {showLuggage && (
+<<<<<<< HEAD
         <div className="luggage-container">
           <div className="luggage">
             <div className="luggage-title-container">
@@ -144,6 +198,25 @@ export default function Weather() {
                 ))}
               </ul>
             </div>
+=======
+        <div className="luggage">
+          <h1 className="luggage-title">Your Luggage:</h1>
+          <div>
+            <ul className="luggage-list">
+              {items[0].vetements
+                .filter((item) => filteredItems(item, weatherData))
+                .map((item) => (
+                  <li key={item.id}>{item.name}</li>
+                ))}
+            </ul>
+            <ul className="luggage-list">
+              {items[1].accessoires
+                .filter((item) => FilterType(item))
+                .map((item) => (
+                  <li key={item.id}>{item.name}</li>
+                ))}
+            </ul>
+>>>>>>> dev
           </div>
         </div>
       )}
