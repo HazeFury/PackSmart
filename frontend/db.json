@@ -2,7 +2,6 @@
   "vetements": [
     
     {
-      "temperature": "0°C et moins",
       "vetements": [
         {
           "id": 1,
@@ -111,124 +110,166 @@
           "name": "Écharpe",
           "weight": 0.6,
           "temperature": "cold"
-        },
-        {
-          "id": 42,
-          "name": "Maillot de bain",
-          "weight": 200,
-          "temperature": "extraHot"
-        },
-        {
-          "id": 39,
-          "name": "Lunettes de soleil",
-          "weight": 50,
-          "temperature": "extraHot"
-        },
-        {
-          "id": 41,
-          "name": "Crème solaire",
-          "weight": 100,
-          "temperature": "extraHot"
-        }
-        
+        }        
       ]
     
     },
     {
-      "temperature": "0°C à 10°C",
       "accessoires": [
         {
-          "id": 42,
+          "id": 19,
           "name": "Chaussure de running",
           "weight": 50,
           "type": "sport"
         },
         {
-          "id": 43,
+          "id": 20,
           "name": "Enceinte MP3",
           "weight": 50,
           "type": "chill"
-        }
-      ]
-    },
-    {
-      "temperature": "10°C à 20°C",
-      "vetements_moyen": [
+        },
+        {
+          "id": 21,
+          "name": "Maillot de bain",
+          "weight": 50,
+          "type": "plage"
+        },
+        {
+          "id": 22,
+          "name": "Serviette de plage",
+          "weight": 50,
+          "type": "plage"
+        },
+        {
+          "id": 23,
+          "name": "Crème solaire",
+          "weight": 50,
+          "type": "plage"
+        },
+        {
+          "id": 24,
+          "name": "Guide du routard",
+          "weight": 50,
+          "type": "culture"
+        },
+        {
+          "id": 25,
+          "name": "carte",
+          "weight": 50,
+          "type": "nature"
+        },
+        {
+          "id": 26,
+          "name": "chaussure de randonnée",
+          "weight": 50,
+          "type": "nature"
+        },
+        {
+          "id": 27,
+          "name": "guide touristique",
+          "weight": 50,
+          "type": "culture"
+        },
+        {
+          "id": 28,
+          "name": "Pierre à feu",
+          "weight": 50,
+          "type": "nature"
+        },
         {
           "id": 29,
-          "name": "Veste légère",
-          "weight": 400
+          "name": "Couteau",
+          "weight": 50,
+          "type": "nature"
         },
         {
           "id": 30,
-          "name": "Pull léger",
-          "weight": 200
+          "name": "boussole",
+          "weight": 50,
+          "type": "nature"
         },
         {
           "id": 31,
-          "name": "Pantalon léger",
-          "weight": 300
+          "name": "Snacks",
+          "weight": 50,
+          "type": "chill"
         },
         {
           "id": 32,
-          "name": "Chaussures de marche légères",
-          "weight": 400
+          "name": "Casque audio",
+          "weight": 50,
+          "type": "chill"
         },
         {
           "id": 33,
-          "name": "Lunettes de soleil",
-          "weight": 50
+          "name": "Livre",
+          "weight": 50,
+          "type": "chill"
         },
         {
           "id": 34,
-          "name": "Chapeau",
-          "weight": 100
+          "name": "Jogging de course",
+          "weight": 50,
+          "type": "sport"
         },
         {
           "id": 35,
-          "name": "Écharpe légère",
-          "weight": 100
+          "name": "Hammac",
+          "weight": 50,
+          "type": "chill"
+        },
+        {
+          "id": 36,
+          "name": "Nappe de pic-nic",
+          "weight": 50,
+          "type": "culture"
+        },
+        {
+          "id": 37,
+          "name": "Barre de traction pliable",
+          "weight": 50,
+          "type": "culture"
         }
         
       ]
     },
     {
-      "temperature": "20°C et plus",
-      "vetements_chaud": [
-        {
-          "id": 36,
-          "name": "T-shirt",
-          "weight": 150
-        },
-        {
-          "id": 37,
-          "name": "Short",
-          "weight": 150
-        },
+      "extras": [
         {
           "id": 38,
-          "name": "Chaussures légères",
-          "weight": 350
+          "name": "Lunettes de soleil",
+          "weight": 400,
+          "weather": "clear"
         },
         {
           "id": 39,
-          "name": "Lunettes de soleil",
-          "weight": 50
+          "name": "Parapluie",
+          "weight": 200,
+          "weather": "rain"
         },
         {
           "id": 40,
-          "name": "Chapeau",
-          "weight": 100
+          "name": "Brumisateur",
+          "weight": 300,
+          "weather": "clear"
         },
         {
           "id": 41,
-          "name": "Crème solaire",
-          "weight": 100
+          "name": "K-way",
+          "weight": 400,
+          "weather": "rain"
         },
         {
           "id": 42,
-          "name": "Maillot de bain",
-          "weight": 200
+          "name": "Coupe-vent",
+          "weight": 50,
+          "weather": "cloud"
+        },
+        {
+          "id": 43,
+          "name": "Cache-cou",
+          "weight": 100,
+          "weather": "cloud"
         }
         
       ]
