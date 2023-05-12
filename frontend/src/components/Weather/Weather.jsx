@@ -188,20 +188,36 @@ export default function Weather() {
         <div className="luggage">
           <h1 className="luggage-title">Your Luggage:</h1>
           <div>
-            <ul className="luggage-list">
-              {items[0].vetements
-                .filter((item) => filteredItems(item, weatherData))
-                .map((item) => (
-                  <li key={item.id}>{item.name}</li>
-                ))}
-            </ul>
-            <ul className="luggage-list">
-              {items[1].accessoires
-                .filter((item) => FilterType(item))
-                .map((item) => (
-                  <li key={item.id}>{item.name}</li>
-                ))}
-            </ul>
+            <div className="clothes-container">
+              <h2 className="title">Clothes</h2>
+              <ul className="luggage-list">
+                {items[0].vetements
+                  .filter((item) => filteredItems(item, weatherData))
+                  .map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                  ))}
+              </ul>
+            </div>
+            <div className="accessory-container">
+              <h2 className="title">Accessories</h2>
+              <ul className="accessory-list">
+                {items[1].accessoires
+                  .filter((item) => FilterType(item))
+                  .map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                  ))}
+              </ul>
+            </div>
+            <div className="extra-container">
+              <h2 className="title">Extra</h2>
+              <ul className="extra-list">
+                {items[1].accessoires
+                  .filter((item) => FilterType(item))
+                  .map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                  ))}
+              </ul>
+            </div>
           </div>
         </div>
       )}
