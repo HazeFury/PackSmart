@@ -174,16 +174,24 @@ export default function Weather() {
           )}
         </div>
       </div>
-      <form className="center">
-        <label htmlFor="cupcake-select">
-          Filter by{" "}
-          <select id="type-select" onChange={(e) => setType(e.target.value)}>
-            <option value="">---</option>
-            <option value="sport">Sport</option>
-            <option value="chill">Chill</option>
-          </select>
-        </label>
-      </form>
+      <div className="type-select-box">
+        <form>
+          <label htmlFor="type-select-label">
+            Select Vacation Type{" "}
+            <select id="type-select" onChange={(e) => setType(e.target.value)}>
+              <option className="option" value="">
+                ✈️
+              </option>
+              <option className="option" value="sport">
+                Sport
+              </option>
+              <option className="option" value="chill">
+                Chill
+              </option>
+            </select>
+          </label>
+        </form>
+      </div>
       {showLuggage && (
         <div className="luggage">
           <h1 className="luggage-title">Your Luggage:</h1>

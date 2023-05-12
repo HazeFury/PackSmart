@@ -124,6 +124,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* For IE <= 11 */
+select::-ms-expand {
+  display: none;
+}
 
 .App {
   font-family: "Bebas Neue", sans-serif;
