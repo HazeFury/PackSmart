@@ -24,8 +24,8 @@ export default function Home() {
           memories!
           <span className="sun">&#x1F31E;</span>
         </p>
-        <Link to="/packing" className="button">
-          Let's PackSmart!
+        <Link to="/packing" className="button-packing">
+          LET'S PACK!
         </Link>
       </div>
     </div>
