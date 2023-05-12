@@ -51,9 +51,9 @@ export default function Header() {
               <Link
                 className="link-style-mini"
                 onClick={handleToggle}
-                to="/contact"
+                to="/about"
               >
-                Contact
+                About
               </Link>
             </li>
           </ul>
