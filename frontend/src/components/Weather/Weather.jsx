@@ -146,36 +146,36 @@ export default function Weather() {
                 Search
               </button>
             </div>
-            {showWeather && weatherData && (
-              <>
-                <div className="location-date">
-                  <div className="location">
-                    <p>{weatherData.name}</p>
-                  </div>
-                  <div className="date">
-                    <p>{date.toDateString("fr-FR")}</p>
-                  </div>
+          </div>
+          {showWeather && weatherData && (
+            <div className="middle-container">
+              <div className="location-date">
+                <div className="location">
+                  <p>{weatherData.name}</p>
+                </div>
+                <div className="date">
+                  <p>{date.toDateString("fr-FR")}</p>
                 </div>
                 <div className="temp">
                   {weatherData.main ? (
                     <h2>{weatherData.main.temp.toFixed()}°c</h2>
                   ) : null}
                 </div>
-                <div className="weather-description">
-                  {weatherData.weather ? (
-                    <img
-                      src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-                      alt="weather-icon"
-                      className="weather-icon"
-                    />
-                  ) : null}
-                  {weatherData.weather ? (
-                    <p>{weatherData.weather[0].description}</p>
-                  ) : null}
-                </div>
-              </>
-            )}
-          </div>
+              </div>
+              <div className="weather-description">
+                {weatherData.weather ? (
+                  <img
+                    src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+                    alt="weather-icon"
+                    className="weather-icon"
+                  />
+                ) : null}
+                {weatherData.weather ? (
+                  <p>{weatherData.weather[0].description}</p>
+                ) : null}
+              </div>
+            </div>
+          )}
 
           {showWeather && weatherData && (
             <div className="weather-bottom-container">
