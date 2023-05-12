@@ -59,6 +59,7 @@
   font-size: 1.2rem;
   text-align: center;
   word-wrap: break-word;
+  margin-top: -35px;
 }
 
 @media screen and (min-width: 768px) {
