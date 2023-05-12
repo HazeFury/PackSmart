@@ -4,6 +4,9 @@
 }
 .main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .temperature {
   font-size: 2rem;
@@ -11,7 +14,6 @@
 }
 .packpage-title {
   font-size: 2rem;
-  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 .packpage-subtitle {
